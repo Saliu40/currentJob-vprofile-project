@@ -13,6 +13,7 @@ pipeline {
         NEXUSPORT = '8081'
         SONARSCANNER = 'sonar-scanner'
         SONARSERVER = 'sonar-server'
+        NEXUS_LOGIN = 'nexus_cred'
     }
 
     stages {
