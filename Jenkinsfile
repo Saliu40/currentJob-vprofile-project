@@ -13,7 +13,7 @@ pipeline {
         NEXUSPORT = '8081'
         SONARSCANNER = 'sonar-scanner'
         SONARSERVER = 'sonar-server'
-        NEXUS_LOGIN = 'nexus_cred'
+        
     }
 
     stages {
@@ -71,7 +71,7 @@ pipeline {
                     groupId: 'QA',
                     version: "${env.BUILD_NUMBER}-${currentBuild.number}",
                     repository: "${RELEASE_REPO}",
-                    credentialsId: 'NEXUS_LOGIN',
+                    credentialsId: 'nexus-cred',
                     artifacts: [
                         [artifactId: 'vproapp',
                             classifier: '',
