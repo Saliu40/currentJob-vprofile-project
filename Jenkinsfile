@@ -7,14 +7,12 @@ pipeline {
 
     environment {
         SNAP_REPO = 'vprofile-snapshot'
-        NEXUS_USER = 'admin'
-        NEXUS_PASS = 'Abdulll40'
         RELEASE_REPO = 'vprofile-release'
         CENTRAL_REPO = 'vpro-maven-central'
         NEXUSIP = '192.168.33.10'
         NEXUSPORT = '8081'
-        NEXUS_GRP_REPO = 'vpro-maven-group'
-        NEXUS_LOGIN = 'nexus-cred'
+        SONARSCANNER = 'sonar-scanner'
+        SONARSERVER = 'sonar-server'
     }
 
     stages {
@@ -24,21 +22,52 @@ pipeline {
             }
             post {
                 success {
-                    echo "Now Archiving."
+                    echo "Build successful. Archiving artifacts."
                     archiveArtifacts artifacts: '**/*.war'
                 }
             }
         }
 
-        stage('Test'){
+        stage('Test') {
             steps {
                 sh 'mvn -s settings.xml test'
             }
         }
-        stage('Checkstyle Analysis'){
+
+        stage('Checkstyle Analysis') {
             steps {
                 sh 'mvn -s settings.xml checkstyle:checkstyle'
             }
+        }
+
+        stage('Sonar Analysis') {
+            environment {
+                scannerHome = tool "${SONARSCANNER}"
+            }
+            steps {
+                withSonarQubeEnv("${SONARSERVER}") {
+                    sh '''
+                    ${scannerHome}/bin/sonar-scanner \
+                    -Dsonar.projectKey=vprofile \
+                    -Dsonar.projectName="vprofile" \
+                    -Dsonar.projectVersion=1.0 \
+                    -Dsonar.sources=src/ \
+                    -Dsonar.java.binaries=target/classes \
+                    -Dsonar.junit.reportsPath=target/surefire-reports/ \
+                    -Dsonar.jacoco.reportPath=target/jacoco.exec \
+                    -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml
+                    '''
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            echo "Pipeline execution complete."
+        }
+        failure {
+            echo "Pipeline execution failed. Please check logs."
         }
     }
 }
