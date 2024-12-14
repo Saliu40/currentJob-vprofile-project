@@ -1,8 +1,8 @@
 def COLOR_MAP = [
     'SUCCESS': 'good',
     'FAILURE': 'danger',
+    'UNSTABLE': 'warning'
 ]
-
 
 pipeline {
     agent any
@@ -19,7 +19,6 @@ pipeline {
         NEXUSPORT = '8081'
         SONARSCANNER = 'sonar-scanner'
         SONARSERVER = 'sonar-server'
-        
     }
 
     stages {
@@ -70,12 +69,15 @@ pipeline {
 
         stage('Upload Artifact') {
             steps {
+                // Optional: Debugging step to ensure artifact exists
+                sh 'ls -l target'
+
                 nexusArtifactUploader(
                     nexusVersion: 'nexus3',
                     protocol: 'http',
                     nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
                     groupId: 'QA',
-                    version: "${env.BUILD_NUMBER}-${currentBuild.number}",
+                    version: "${env.BUILD_NUMBER}",
                     repository: "${RELEASE_REPO}",
                     credentialsId: 'nexus-cred',
                     artifacts: [
@@ -91,10 +93,18 @@ pipeline {
 
     post {
         always {
-            echo "Slack Notification."
-            slacksend channel: '#jenkins',
-                color: COLOR_MAP[currentBuild.currentResult],
-                message: "*${currentBuild.currentResult}*: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n more info at: ${env.BUILD_URL}"
+            echo "Sending Slack Notification."
+            script {
+                def color = COLOR_MAP.get(currentBuild.currentResult, 'warning') // Default to 'warning' for unknown results
+                slackSend(
+                    channel: '#jenkins',
+                    color: color,
+                    message: """
+                    *${currentBuild.currentResult}*: Job ${env.JOB_NAME} build ${env.BUILD_NUMBER}
+                    More info: ${env.BUILD_URL}
+                    """
+                )
+            }
         }
     }
 }
