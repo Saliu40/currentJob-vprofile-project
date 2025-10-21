@@ -1,25 +1,7 @@
-# Prerequisites
-#
-- JDK 18 or later
-- Maven 3.9 or later
-- MySQL 8 or later
-
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
-# Database
-Here,we used Mysql DB 
-MSQL DB Installation Steps for Linux ubuntu 14.04:
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
-
-Then look for the file :
-- /src/main/resources/accountsdb
-- accountsdb.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < accountsdb.sql
-
-
+The Name of this Project is continuos integration on AWS: Using AWS services for CICD
+# Services Used:
+1 BitBucket for source code
+2 AWS Code Artifact for Maven Dependencies 
+3 AWS Code Buuild to build Artifact
+4 Sonar Cloud for Code Analysis
+5 
