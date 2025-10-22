@@ -43,7 +43,7 @@ Git Push origin --all (to push Ur source code to the new remoe repo created on b
 
 STEP2
 <img width="856" height="167" alt="Screenshot 2025-10-22 112349" src="https://github.com/user-attachments/assets/f3f59a95-34f1-40f9-8cca-5566a15c79f5" />
-1. Setting Up AWS Code Artifact Repository
+a. Setting Up AWS Code Artifact Repository
 create AWS free tier account if U dont have, if U already have, log into your AWS console, go to search and type code artifact and create a repo.<img width="951" height="990" alt="Screenshot 2025-10-17 140303" src="https://github.com/user-attachments/assets/3d62ed01-e27b-4ea2-9203-c84196465f02" />
 Get to know how it wolrks <img width="956" height="703" alt="Screenshot 2025-10-17 142122" src="https://github.com/user-attachments/assets/36a9ea24-4dff-45eb-b291-1a51c510e8d5" />
 
@@ -51,7 +51,8 @@ click on create and give it a name, select maven, thats where code artifact is g
 <img width="957" height="914" alt="Screenshot 2025-10-17 142938" src="https://github.com/user-attachments/assets/ba00eb46-45d4-410d-80bc-c76a4309ce5e" /> domain name should be included, create one if U dont have. click on next
 create Ur repository <img width="946" height="956" alt="Screenshot 2025-10-17 143212" src="https://github.com/user-attachments/assets/2aa5cf4a-a2c3-4301-a02d-ad24d5ba82e5" />
 <img width="923" height="966" alt="Screenshot 2025-10-17 143608" src="https://github.com/user-attachments/assets/2a3a95c8-af50-43d0-b06b-82f5dd876f74" />
-
+<img width="920" height="758" alt="Screenshot 2025-10-17 143713" src="https://github.com/user-attachments/assets/893aff04-4aa0-4851-a18e-37ce0d3bfe52" />
+Click on the maven-central-store to view connection instructions as we are going to use those autentications on our source code pom, & setttings.xml files <img width="961" height="1032" alt="Screenshot 2025-10-17 143857" src="https://github.com/user-attachments/assets/d5840f58-7fa7-4d54-8fd4-1412f28b36e9" /> select mac&Linux, or Windows depending on the Operating system using for the project.
 
 
 
