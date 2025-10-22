@@ -32,5 +32,12 @@ Migrating source Code to Bitbucket:
    before that we need to checkout to all the branches
    this for loops comand will list all branches and check all out instead of doing it individually. we just automate it using for loops command: for i in git branch -a | grep remotes | grep -v HEAD | grep -v master | cut -d / -f3; do git checkout $i;done
    after that we remove the remote Origin (git remote rm origin).
-4. add the new Bitbucket remote URL:
-   
+   <img width="907" height="320" alt="Screenshot 2025-09-09 131219" src="https://github.com/user-attachments/assets/976b2c4f-0235-4dac-bb07-ef922344f0cf" />
+
+5. add the new Bitbucket remote URL:
+   copy Ur remote repo URL
+<img width="1017" height="714" alt="Screenshot 2025-09-09 131406" src="https://github.com/user-attachments/assets/ea930dd3-692b-483b-9ceb-64cc509a4536" />
+Git remote add origin repo URL &
+Git Push origin --all (to push Ur source code to the new remoe repo created on bitbucket)
+<img width="680" height="889" alt="Screenshot 2025-09-09 131814" src="https://github.com/user-attachments/assets/d177f848-f0b7-4e79-8dde-92f4851b4725" />
+
