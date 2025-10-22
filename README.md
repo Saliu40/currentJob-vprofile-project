@@ -53,6 +53,10 @@ create Ur repository <img width="946" height="956" alt="Screenshot 2025-10-17 14
 <img width="923" height="966" alt="Screenshot 2025-10-17 143608" src="https://github.com/user-attachments/assets/2a3a95c8-af50-43d0-b06b-82f5dd876f74" />
 <img width="920" height="758" alt="Screenshot 2025-10-17 143713" src="https://github.com/user-attachments/assets/893aff04-4aa0-4851-a18e-37ce0d3bfe52" />
 Click on the maven-central-store to view connection instructions as we are going to use those autentications on our source code pom, & setttings.xml files <img width="961" height="1032" alt="Screenshot 2025-10-17 143857" src="https://github.com/user-attachments/assets/d5840f58-7fa7-4d54-8fd4-1412f28b36e9" /> select mac&Linux, or Windows depending on the Operating system using for the project.
+b. going through pom.xml, settings.xml files of our prolject source code
+use anycode editor to open the project repo, in my case am using a Vscode editor, <img width="942" height="927" alt="Screenshot 2025-10-17 145739" src="https://github.com/user-attachments/assets/f7163593-b680-4ec3-a685-86333d035c2d" />
+Click on the Branches and select ci-aws (thats our current project Branch) <img width="923" height="1078" alt="Screenshot 2025-10-17 150139" src="https://github.com/user-attachments/assets/ded74a72-d266-4958-a9ab-1028ea5d8e30" />
+<img width="932" height="768" alt="Screenshot 2025-10-17 150340" src="https://github.com/user-attachments/assets/db1bfd54-57eb-4ae0-9866-b4eaf9b4ba8b" /> thats our project source codes.
 
 
 
