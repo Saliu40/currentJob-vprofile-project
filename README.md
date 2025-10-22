@@ -21,9 +21,16 @@ STEPS:
 <img width="728" height="685" alt="Screenshot 2025-09-09 123013" src="https://github.com/user-attachments/assets/694cd18e-a7bf-4eba-91fe-a47edfb8ed05" />
 <img width="950" height="644" alt="Screenshot 2025-09-09 123422" src="https://github.com/user-attachments/assets/46a993e2-c9e1-4e5c-8565-867da5dbee5d" />
 <img width="950" height="780" alt="Screenshot 2025-09-09 123536" src="https://github.com/user-attachments/assets/70abe32d-58f2-4e2f-941e-c2b257186cf9" />
-After creating a remote repo on Bitbucket, for SSH Authentications, we copy our local public_key to add it on our bitbucket SSH-keys. 
+After creating a remote workspace, $ repo on Bitbucket, for SSH Authentications, we copy our local public_key to add it on our bitbucket SSH-keys under settings. 
 Test the Connection.
 <img width="927" height="356" alt="Screenshot 2025-09-09 124855" src="https://github.com/user-attachments/assets/6da88ace-d767-4348-b9fe-20311f54ab9f" />
 
-Migrating Code to Bitbucket:
-1. Clone The Code to Ur Local Repo(git clone https://github.com/Saliu40/currentJob-vprofile-project.git)
+Migrating source Code to Bitbucket:
+1. Clone The source Code to Ur Local Repo(git clone https://github.com/Saliu40/currentJob-vprofile-project.git)
+2. cd into into the project
+3. Remove the Remote Origin:
+   before that we need to checkout to all the branches
+   this for loops comand will list all branches and check all out instead of doing it individually. we just automate it using for loops command: for i in git branch -a | grep remotes | grep -v HEAD | grep -v master | cut -d / -f3; do git checkout $i;done
+   after that we remove the remote Origin (git remote rm origin).
+4. add the new Bitbucket remote URL:
+   
