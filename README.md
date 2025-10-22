@@ -15,7 +15,7 @@ The Name of this Project is continuos integration on AWS: Using AWS services for
 we clone the source codes to our local repositories  (https://github.com/Saliu40/currentJob-vprofile-project.git)
 we can use anycode editor for code changes, but on this project, we used Visual Studio Code.
 
-STEPS:
+STEP1:
 <img width="930" height="139" alt="Screenshot 2025-10-22 112338" src="https://github.com/user-attachments/assets/c763471a-10a9-4eca-96f5-fe05189c7b6f" />
 
 <img width="728" height="685" alt="Screenshot 2025-09-09 123013" src="https://github.com/user-attachments/assets/694cd18e-a7bf-4eba-91fe-a47edfb8ed05" />
@@ -41,3 +41,10 @@ Git remote add origin repo URL &
 Git Push origin --all (to push Ur source code to the new remoe repo created on bitbucket)
 <img width="680" height="889" alt="Screenshot 2025-09-09 131814" src="https://github.com/user-attachments/assets/d177f848-f0b7-4e79-8dde-92f4851b4725" />
 
+STEP2
+<img width="856" height="167" alt="Screenshot 2025-10-22 112349" src="https://github.com/user-attachments/assets/f3f59a95-34f1-40f9-8cca-5566a15c79f5" />
+1. Setting Up AWS Code Artifact Repository
+create AWS free tier account if U dont have, if U already have, log into your AWS console, go to search and type code artifact.<img width="951" height="990" alt="Screenshot 2025-10-17 140303" src="https://github.com/user-attachments/assets/3d62ed01-e27b-4ea2-9203-c84196465f02" />
+
+
+ 
