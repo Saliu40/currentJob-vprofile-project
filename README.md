@@ -68,4 +68,8 @@ Create a token on the sonarcloud, click on my Account, security and create a tok
 <img width="958" height="1021" alt="Screenshot 2025-10-17 152841" src="https://github.com/user-attachments/assets/97d32dbe-8321-406f-80a1-d8fc348d5cd2" />
 Create New Organization by clicking the plus button <img width="1460" height="985" alt="Screenshot 2025-10-17 153328" src="https://github.com/user-attachments/assets/cfebc125-bfe4-4509-b486-944d8cad866d" /> Scroll down to select the free plan, and create the organization.
 
+click on sonar cloud, click on Analze new project, U'll see an option to create a project manually 
+and make sure U select the recent organization U just created on the organization drop down 
+select public on the project visibility.
+<img width="957" height="919" alt="Screenshot 2025-10-17 153722" src="https://github.com/user-attachments/assets/470bcaa2-c64d-4978-bef1-b84900e85817" />
 
