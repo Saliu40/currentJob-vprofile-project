@@ -72,4 +72,7 @@ click on sonar cloud, click on Analze new project, U'll see an option to create 
 and make sure U select the recent organization U just created on the organization drop down 
 select public on the project visibility.
 <img width="957" height="919" alt="Screenshot 2025-10-17 153722" src="https://github.com/user-attachments/assets/470bcaa2-c64d-4978-bef1-b84900e85817" />
-
+select the previous version, & create the project
+<img width="952" height="943" alt="Screenshot 2025-10-17 161426" src="https://github.com/user-attachments/assets/db11c10f-9b42-4928-9381-455d9b2dadf5" />
+Click on the recently created project Information section to copy the project key, save it on Ur notepad
+<img width="945" height="892" alt="Screenshot 2025-10-17 161856" src="https://github.com/user-attachments/assets/f0424606-5ddd-441a-b2e9-5b7752d8121c" />
