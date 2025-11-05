@@ -74,11 +74,11 @@ select public on the project visibility.
 <img width="957" height="919" alt="Screenshot 2025-10-17 153722" src="https://github.com/user-attachments/assets/470bcaa2-c64d-4978-bef1-b84900e85817" />
 select the previous version, & create the project
 <img width="952" height="943" alt="Screenshot 2025-10-17 161426" src="https://github.com/user-attachments/assets/db11c10f-9b42-4928-9381-455d9b2dadf5" />
-Click on the recently created project Information section to copy both the project key, & the Organization key, save them on Ur notepad
+Click on the recently created project Information section to copy both the project key, & the Organization key, save them on Ur notepad<img width="945" height="892" alt="Screenshot 2025-10-17 161856" src="https://github.com/user-attachments/assets/f0424606-5ddd-441a-b2e9-5b7752d8121c" />
 
 Stage5. Code Build Job: Creating a code build job is more like creating a Jenkins Job
 On Ur AWS Console, search for Code build, and create a project. this service is paid based on the number of build time used <img width="951" height="877" alt="Screenshot 2025-10-20 121109" src="https://github.com/user-attachments/assets/406fea2f-1ff3-410a-a2d5-e8ebcddcfc41" /> it takes all its stages, and steps info from the build spec file earlier created.
 
 
 
-<img width="945" height="892" alt="Screenshot 2025-10-17 161856" src="https://github.com/user-attachments/assets/f0424606-5ddd-441a-b2e9-5b7752d8121c" />
+
