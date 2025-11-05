@@ -78,6 +78,8 @@ Click on the recently created project Information section to copy both the proje
 
 Stage5. Code Build Job: Creating a code build job is more like creating a Jenkins Job
 On Ur AWS Console, search for Code build, and create a project. this service is paid based on the number of build time used <img width="951" height="877" alt="Screenshot 2025-10-20 121109" src="https://github.com/user-attachments/assets/406fea2f-1ff3-410a-a2d5-e8ebcddcfc41" /> it takes all its stages, and steps info from the build spec file earlier created.
+<img width="953" height="903" alt="Screenshot 2025-10-20 121212" src="https://github.com/user-attachments/assets/34d2fb95-2ed9-4760-aac3-43958bfd15a1" />
+<img width="942" height="903" alt="Screenshot 2025-10-20 121256" src="https://github.com/user-attachments/assets/120d7f4e-2bd7-471f-943b-3f191aedd86d" />
 
 
 
