@@ -117,7 +117,15 @@ scroll down to select the source code(Bitbucket)
 its shows error message gat aws is not connected to our bitbucket, lets fix that:
 lets click on that 'manage account credentials' so we can link our bitbucket account
 <img width="918" height="818" alt="Screenshot 2025-10-20 121548" src="https://github.com/user-attachments/assets/f7c8bbca-0b23-47f7-9241-512e733a70a4" />
-on the credential type select the bitbucket app
+on the credential type select the bitbucket app, click on 'create a new bitbucket connection' give it a name and clicked on 'connect to bitbucket'.
+####Note: for AWS-Bitbucket connection to work, make sure to log in Ur bitbucket account on the same browser U loged in Ur AWS 
 
+<img width="946" height="919" alt="Screenshot 2025-10-20 121745" src="https://github.com/user-attachments/assets/9d2fd3f8-ff23-40a3-a5af-f340a584c49b" />
+it will promt for you to grant access, grant the access to connect.
+
+
+<img width="937" height="904" alt="Screenshot 2025-10-20 144145" src="https://github.com/user-attachments/assets/b3479263-8bc6-4173-a265-5c265c71515b" />
+
+Once successfully connected, you will be able to see all your bitbucket repositories, select the repo, and the branch name
 
 
