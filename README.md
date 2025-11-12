@@ -110,8 +110,14 @@ Stage5. Code Build Job: Creating a code build job is more like creating a Jenkin
 On Ur AWS Console, search for Code build, and create a project. this service is paid based on the number of build time used <img width="951" height="877" alt="Screenshot 2025-10-20 121109" src="https://github.com/user-attachments/assets/406fea2f-1ff3-410a-a2d5-e8ebcddcfc41" /> 
 it takes all its stages, and steps info from the build spec file earlier created.
 <img width="953" height="903" alt="Screenshot 2025-10-20 121212" src="https://github.com/user-attachments/assets/34d2fb95-2ed9-4760-aac3-43958bfd15a1" />
-<img width="942" height="903" alt="Screenshot 2025-10-20 121256" src="https://github.com/user-attachments/assets/120d7f4e-2bd7-471f-943b-3f191aedd86d" />
 
+scroll down to select the source code(Bitbucket)
+
+<img width="942" height="903" alt="Screenshot 2025-10-20 121256" src="https://github.com/user-attachments/assets/120d7f4e-2bd7-471f-943b-3f191aedd86d" />
+its shows error message gat aws is not connected to our bitbucket, lets fix that:
+lets click on that 'manage account credentials' so we can link our bitbucket account
+<img width="918" height="818" alt="Screenshot 2025-10-20 121548" src="https://github.com/user-attachments/assets/f7c8bbca-0b23-47f7-9241-512e733a70a4" />
+on the credential type select the bitbucket app
 
 
 
