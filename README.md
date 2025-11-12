@@ -66,13 +66,26 @@ go to codeArtifact, select Maven-central-store, click on 'view connection introd
 make sure to copy that Properly with no extral lines.
 
 Use any editor, go to Ur Project Pom.xml file (make sure Ure in ci-aws Branch), scroll down to line 303 and change the Url to the Url copied from CodeArtifact>maven-centeral-store
+
 <img width="916" height="837" alt="Screenshot 2025-10-20 114450" src="https://github.com/user-attachments/assets/4eaee7a9-b8af-4f43-b428-442d0dfec7c2" />
 
+save the file and lets move to settings.xml file
+paste the same Url on line 18, and line 30 on Ur settings.xml file
 
+<img width="936" height="935" alt="Screenshot 2025-10-20 114824" src="https://github.com/user-attachments/assets/46b79cea-9085-4c49-be6b-e205afe4b6ec" />
+Save and exit the file
 
+Once Ure through, we go to the 'aws-files' a folder on the same repo, move the 'buildspec.yml file' to the root directory.
 
+<img width="955" height="742" alt="Screenshot 2025-10-20 115006" src="https://github.com/user-attachments/assets/f685d090-0790-4faf-8e91-0f15254e1a6d" />
+make sure those variable names U have here, match with your parameter store.
+on line 15, the CodeArtifact authentication line, we will change that with our latest recently created codeArtifact Authentication  
+go back to same codeArtifact>maven-central-store, click on 'view connection intrudction', select Ur OS, select maven as the package manager, and copy the codeArtifact Authorization for authentication.
 
-
+<img width="932" height="717" alt="Screenshot 2025-10-20 115231" src="https://github.com/user-attachments/assets/d9fe2df3-8711-4680-8d3c-f6eb4b2e134c" />
+paste the code on line 15 and save it, commit and push the changes to github
+<img width="961" height="743" alt="Screenshot 2025-10-20 115431" src="https://github.com/user-attachments/assets/ba50f33a-755b-48b0-94f3-7382f69f171f" /> 
+note that this buildspec.yml file works like our jenkinsFile, we define series of instructions we want our code build to achieve.
 
 
 
