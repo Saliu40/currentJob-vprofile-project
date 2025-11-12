@@ -59,6 +59,17 @@ Click on the Branches and select ci-aws (thats our current project Branch) <img 
 <img width="932" height="768" alt="Screenshot 2025-10-17 150340" src="https://github.com/user-attachments/assets/db1bfd54-57eb-4ae0-9866-b4eaf9b4ba8b" /> thats our project source codes.
 the buildspec.yml file represents code artifact file, it works like jenkinsfile, it is define using yml language
 
+
+
+
+
+
+
+
+
+
+
+
 Setting Up our sonar Cloud, first loginto Ur github account on a browser, and go to sonarcloud.io
 choose log in with github. <img width="956" height="910" alt="Screenshot 2025-10-17 152442" src="https://github.com/user-attachments/assets/222661d9-ab14-4e4a-9a68-d5c828348ef0" />
  It will loged you in using Ur github credencials.
