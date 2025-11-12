@@ -128,4 +128,37 @@ it will promt for you to grant access, grant the access to connect.
 Once successfully connected, you will be able to see all your bitbucket repositories, select the repo, and the branch name, scroll down to complete the setup
 
 <img width="939" height="976" alt="Screenshot 2025-10-20 164059" src="https://github.com/user-attachments/assets/21d53531-d9da-41f6-a622-449e3bb8cd35" />
+select the compute resources which is ec2, select Ubuntu as the operating system, select the run time image to be 7.0 and scroll down.
+
+
+<img width="961" height="957" alt="Screenshot 2025-10-20 164335" src="https://github.com/user-attachments/assets/66d728f5-b353-445c-aef1-919267774064" />
+
+select new service role and give it a name,  "roles in aws provides permission through policies" on the build spec option, leave it as it is, aws will fetch the buildspec.yml file on ur bitbucket repo root directory. if otherwize Ur buildspec file is not on the root directory, U'll have to mention the part on that buildspec space.
+
+
+<img width="897" height="948" alt="Screenshot 2025-10-20 164856" src="https://github.com/user-attachments/assets/76d7be40-315e-40a5-9441-3033677c93d1" />
+the last phase is to configure the cloudwatch so it will alert Us if the Project fails and why it is failing. give the cloudwatch a name, a stream name and create your code build project.
+
+
+<img width="1851" height="932" alt="Screenshot 2025-10-20 165158" src="https://github.com/user-attachments/assets/90e8070b-0fac-4cff-8c4e-e867aa242492" />
+Our codebuild is created and ready for Us to start build, but at this stage it will fail untill we fix the parpaeter store.
+lets edit back to the build project we just created: click on edit > click on environment, there we should see the service role, we need to copy that service role.
+
+
+<img width="892" height="812" alt="Screenshot 2025-10-20 165742" src="https://github.com/user-attachments/assets/4023153b-f2fa-4a4c-8283-00ea894c0cab" />
+copy the service role from codebuild as shown above, and lets go to the service IAM for modifications.
+
+Search and Click IAM on Ur aws console, go to roles, and paste what we just copy to search for our project codebuild role for modification. You Should see the role which was created by codebuild as shown bellow, click on it 
+<img width="962" height="970" alt="Screenshot 2025-10-20 165932" src="https://github.com/user-attachments/assets/e0c8e328-e4a3-470d-abd6-89d78e11e0c1" />
+
+You will permissions with two policies such as cloudwatch logs and the code build base policy
+<img width="1914" height="528" alt="Screenshot 2025-10-20 170012" src="https://github.com/user-attachments/assets/3654f53e-1a14-4502-9f82-3b872b8827b4" />
+
+
+
+
+
+
+
+
 
