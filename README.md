@@ -123,9 +123,9 @@ on the credential type select the bitbucket app, click on 'create a new bitbucke
 <img width="946" height="919" alt="Screenshot 2025-10-20 121745" src="https://github.com/user-attachments/assets/9d2fd3f8-ff23-40a3-a5af-f340a584c49b" />
 it will promt for you to grant access, grant the access to connect.
 
-
 <img width="937" height="904" alt="Screenshot 2025-10-20 144145" src="https://github.com/user-attachments/assets/b3479263-8bc6-4173-a265-5c265c71515b" />
 
-Once successfully connected, you will be able to see all your bitbucket repositories, select the repo, and the branch name
+Once successfully connected, you will be able to see all your bitbucket repositories, select the repo, and the branch name, scroll down to complete the setup
 
+<img width="939" height="976" alt="Screenshot 2025-10-20 164059" src="https://github.com/user-attachments/assets/21d53531-d9da-41f6-a622-449e3bb8cd35" />
 
