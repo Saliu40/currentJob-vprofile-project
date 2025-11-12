@@ -83,13 +83,11 @@ on line 15, the CodeArtifact authentication line, we will change that with our l
 go back to same codeArtifact>maven-central-store, click on 'view connection intrudction', select Ur OS, select maven as the package manager, and copy the codeArtifact Authorization for authentication.
 
 <img width="932" height="717" alt="Screenshot 2025-10-20 115231" src="https://github.com/user-attachments/assets/d9fe2df3-8711-4680-8d3c-f6eb4b2e134c" />
-paste the code on line 15 and save it, commit and push the changes to github
+paste the code on line 15 and save it, commit and push the changes to Ur BitBuckets repository
 <img width="961" height="743" alt="Screenshot 2025-10-20 115431" src="https://github.com/user-attachments/assets/ba50f33a-755b-48b0-94f3-7382f69f171f" /> 
 note that this buildspec.yml file works like our jenkinsFile, we define series of instructions we want our code build to achieve.
-
-
-
-
+<img width="943" height="1007" alt="Screenshot 2025-10-20 120937" src="https://github.com/user-attachments/assets/c62bc597-3512-47c9-ac36-01fda1229235" />
+changes made are saved on the Bitbukets repo
 
 Setting Up our sonar Cloud, first loginto Ur github account on a browser, and go to sonarcloud.io
 choose log in with github. <img width="956" height="910" alt="Screenshot 2025-10-17 152442" src="https://github.com/user-attachments/assets/222661d9-ab14-4e4a-9a68-d5c828348ef0" />
