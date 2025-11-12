@@ -59,6 +59,14 @@ Click on the Branches and select ci-aws (thats our current project Branch) <img 
 <img width="932" height="768" alt="Screenshot 2025-10-17 150340" src="https://github.com/user-attachments/assets/db1bfd54-57eb-4ae0-9866-b4eaf9b4ba8b" /> thats our project source codes.
 the buildspec.yml file represents code artifact file, it works like jenkinsfile, it is define using yml language
 
+**##Setting Up Our Project Pom.xml, & Settings.xml Files##**
+go to codeArtifact, select Maven-central-store, click on 'view connection introductions' select Ur Operating system, select maven on the package manager, and copy this URL
+
+<img width="946" height="922" alt="Screenshot 2025-10-20 114226" src="https://github.com/user-attachments/assets/74c91595-e92c-48f5-99a8-794ed05346de" />
+make sure to copy that Properly with no extral lines.
+
+Use any editor, go to Ur Project Pom.xml file (make sure Ure in ci-aws Branch), scroll down to line 303 and change the Url to the Url copied from CodeArtifact>maven-centeral-store
+<img width="916" height="837" alt="Screenshot 2025-10-20 114450" src="https://github.com/user-attachments/assets/4eaee7a9-b8af-4f43-b428-442d0dfec7c2" />
 
 
 
