@@ -178,13 +178,15 @@ click on roles, search the our project role using the number'85' earlier attarch
 click on the role
 
 <img width="962" height="948" alt="Screenshot 2025-10-21 112317" src="https://github.com/user-attachments/assets/17a9ff00-7054-456e-8ec4-4d7a06feceaa" />
+
 click on attarch policies, find the recently created policy and put a check mark on it as seen below, and clicked on 'add permissoin'.
+
+<img width="969" height="833" alt="Screenshot 2025-10-21 112348" src="https://github.com/user-attachments/assets/8cc4554c-583a-4a3f-9379-1c8a8a6ae729" />
 
 one more policy to add it 'policy to access our codeArtifact', search for codeArtifact and select 'read only access' as seen below.
 
 <img width="1910" height="938" alt="Screenshot 2025-10-21 112525" src="https://github.com/user-attachments/assets/505c6a30-9a88-48bc-8617-46b2c2514980" />
 
-<img width="969" height="833" alt="Screenshot 2025-10-21 112348" src="https://github.com/user-attachments/assets/8cc4554c-583a-4a3f-9379-1c8a8a6ae729" />
 
 
 
