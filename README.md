@@ -151,10 +151,22 @@ copy the service role from codebuild as shown above, and lets go to the service 
 Search and Click IAM on Ur aws console, go to roles, and paste what we just copy to search for our project codebuild role for modification. You Should see the role which was created by codebuild as shown bellow, click on it 
 <img width="962" height="970" alt="Screenshot 2025-10-20 165932" src="https://github.com/user-attachments/assets/e0c8e328-e4a3-470d-abd6-89d78e11e0c1" />
 
-You will permissions with two policies such as cloudwatch logs and the code build base policy
+You will see permissions with two policies such as cloudwatch logs and the code build base policy
 <img width="1914" height="528" alt="Screenshot 2025-10-20 170012" src="https://github.com/user-attachments/assets/3654f53e-1a14-4502-9f82-3b872b8827b4" />
 
+Click on policies(on the left side open panel)
 
+<img width="960" height="588" alt="Screenshot 2025-10-20 170034" src="https://github.com/user-attachments/assets/0ba2a7c8-fdb3-42cd-9220-d10754eb9a68" />
+clicked on create policies, we are to create our own custorm policy and attarched the policy to the service role
+
+<img width="980" height="930" alt="Screenshot 2025-10-20 170152" src="https://github.com/user-attachments/assets/65ddb935-4c3f-4acd-8bce-8da3b89c723e" />
+select the 'systems manager', we just want to have access to the parameter store.
+on the list section, check mark 'Describe Parameters' and on the read section, check mark all these section as seen below 
+
+
+<img width="1513" height="716" alt="Screenshot 2025-10-21 112006" src="https://github.com/user-attachments/assets/53afe061-b55e-4600-b966-02481040e445" />
+
+##Take note: we selected, 1 parameter on the list section, and 5 parameters on the read section as seen above
 
 
 
