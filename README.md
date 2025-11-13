@@ -189,6 +189,9 @@ one more policy to add it 'policy to access our codeArtifact', search for codeAr
 
 
 ***###Time To Run Our Build Job###***
+go to CodeBuild where our project is and click on Build, is going to take some time.
+<img width="1919" height="1004" alt="Screenshot 2025-11-13 151337" src="https://github.com/user-attachments/assets/1f951a14-743d-48e4-b931-a0c4c419053f" />
 
-
-
+Your Build should be successfull if everything was well configured
+<img width="1875" height="975" alt="Screenshot 2025-11-13 162109" src="https://github.com/user-attachments/assets/e4785d5f-8b5e-40f2-a4dc-617cfccccc53" />
+###If fail, study the docummentation all over again
