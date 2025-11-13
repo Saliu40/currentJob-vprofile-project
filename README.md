@@ -166,9 +166,25 @@ on the list section, check mark 'Describe Parameters' and on the read section, c
 
 <img width="1513" height="716" alt="Screenshot 2025-10-21 112006" src="https://github.com/user-attachments/assets/53afe061-b55e-4600-b966-02481040e445" />
 
-##Take note: we selected, 1 parameter on the list section, and 5 parameters on the read section as seen above
+##Take note: we selected, 1 access Level parameter on the list section, and 5 access Level parameters on the read section as seen above.
+click on nex when Ure through 
 
 
+<img width="879" height="978" alt="Screenshot 2025-10-21 112133" src="https://github.com/user-attachments/assets/6a041d40-d5cd-4177-8b37-897119326a63" />
+Gicve the Policy a name as seen above, and create 
+
+lets go attach the recently creted policy to our project code build role
+click on roles, search the our project role using the number'85' earlier attarched to the role.
+click on the role
+
+<img width="962" height="948" alt="Screenshot 2025-10-21 112317" src="https://github.com/user-attachments/assets/17a9ff00-7054-456e-8ec4-4d7a06feceaa" />
+click on attarch policies, find the recently created policy and put a check mark on it as seen below, and clicked on 'add permissoin'.
+
+one more policy to add it 'policy to access our codeArtifact', search for codeArtifact and select 'read only access' as seen below.
+
+<img width="1910" height="938" alt="Screenshot 2025-10-21 112525" src="https://github.com/user-attachments/assets/505c6a30-9a88-48bc-8617-46b2c2514980" />
+
+<img width="969" height="833" alt="Screenshot 2025-10-21 112348" src="https://github.com/user-attachments/assets/8cc4554c-583a-4a3f-9379-1c8a8a6ae729" />
 
 
 
