@@ -96,15 +96,43 @@ choose log in with github. <img width="956" height="910" alt="Screenshot 2025-10
 Create a token on the sonarcloud, click on my Account, security and create a token
  save the token on Ur note pad
 <img width="958" height="1021" alt="Screenshot 2025-10-17 152841" src="https://github.com/user-attachments/assets/97d32dbe-8321-406f-80a1-d8fc348d5cd2" />
+we are going to store that token on the aws parameter store.(thats our login credential)
 Create New Organization by clicking the plus button <img width="1460" height="985" alt="Screenshot 2025-10-17 153328" src="https://github.com/user-attachments/assets/cfebc125-bfe4-4509-b486-944d8cad866d" /> Scroll down to select the free plan, and create the organization.
 
-click on sonar cloud, click on Analze new project, U'll see an option to create a project manually 
+click on sonar cloud, click on Analyze new project, U'll see an option to create a project manually 
 and make sure U select the recent organization U just created on the organization drop down 
 select public on the project visibility.
 <img width="957" height="919" alt="Screenshot 2025-10-17 153722" src="https://github.com/user-attachments/assets/470bcaa2-c64d-4978-bef1-b84900e85817" />
 select the previous version, & create the project
 <img width="952" height="943" alt="Screenshot 2025-10-17 161426" src="https://github.com/user-attachments/assets/db11c10f-9b42-4928-9381-455d9b2dadf5" />
-Click on the recently created project Information section to copy both the project key, & the Organization key, save them on Ur notepad<img width="945" height="892" alt="Screenshot 2025-10-17 161856" src="https://github.com/user-attachments/assets/f0424606-5ddd-441a-b2e9-5b7752d8121c" />
+Click on the recently created project Information section to copy both the project key, & the Organization key, save them on Ur notepad, those are Ur sonar Login details we will use to create parameter as defined on our builspec.yml file.
+<img width="945" height="892" alt="Screenshot 2025-10-17 161856" src="https://github.com/user-attachments/assets/f0424606-5ddd-441a-b2e9-5b7752d8121c" />
+
+***###AWS Systems Manager Parameter Store***
+Based on our defined Buildspec.yml file, we are going to create a parmeter store on aws to store our Sonar Cloud Credentials. Note in terms of best practices, we are to store our credentials on AWS Secrete Manager(a Paid service), the free alternative service is the parameter store. 
+
+<img width="955" height="787" alt="Screenshot 2025-11-13 142250" src="https://github.com/user-attachments/assets/c9ae670d-52cc-4af0-9c4e-345e07441874" />
+
+search for system manager from Ur aws Console, scroll down the left panel and click on the parameter store as seen above, we are going to create 4 parameters for our credencials copied from the Sonar Cloud server:
+   1. LOGIN parameter
+   2. HOST Parameter
+   3. Organization Parameter
+   4. Project parameter
+<img width="947" height="881" alt="Screenshot 2025-11-13 142456" src="https://github.com/user-attachments/assets/d5705195-de47-42a2-9c3a-0444a89aedb0" />
+storing the organization token earlier copied from sonarcloud
+scroll down and paste the organization token on the value box
+<img width="949" height="892" alt="Screenshot 2025-11-13 142511" src="https://github.com/user-attachments/assets/d513edce-4079-4126-9ec5-13f7f8e6621f" />
+create the parameter.
+*Repeat Same step to create Project parameter store using the project token earlier copied, and HOST (https://sonarcloud.io paste that link on the value section while creating HOST paramete.) thats sonarcloud Url.
+
+when creating LOGIN parameter, select secure string on Type section
+<img width="937" height="893" alt="Screenshot 2025-11-13 143100" src="https://github.com/user-attachments/assets/24fb6d5e-24fd-47bb-8b90-9f2083e1eaf6" />
+<img width="910" height="962" alt="Screenshot 2025-11-13 143113" src="https://github.com/user-attachments/assets/7abc6663-8ba2-43f8-9d80-4813f14a47a1" /> 
+on the value section, paste the token earlier generated on the sonacloud account settings.
+<img width="916" height="857" alt="Screenshot 2025-11-13 143138" src="https://github.com/user-attachments/assets/6f20038b-202f-44cd-a6a3-6732de01a13f" />
+All 4 Parameters created and token saved.
+*Note: take note of spellings and the letters case sensitivity as it most be allign with buildspec.yml file.
+<img width="1919" height="297" alt="Screenshot 2025-11-17 123125" src="https://github.com/user-attachments/assets/4d9f49dc-d670-4a73-b869-8dbab6d89cdc" />
 
 Stage5. Code Build Job: Creating a code build job is more like creating a Jenkins Job
 On Ur AWS Console, search for Code build, and create a project. this service is paid based on the number of build time used <img width="951" height="877" alt="Screenshot 2025-10-20 121109" src="https://github.com/user-attachments/assets/406fea2f-1ff3-410a-a2d5-e8ebcddcfc41" /> 
