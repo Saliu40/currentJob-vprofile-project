@@ -241,14 +241,15 @@ The Next Build Job to configure is the code Artifact.
 the buildspec File for this Artifact is inside the 'aws-files' located in our source repo as seen below
 <img width="964" height="836" alt="Screenshot 2025-11-13 214715" src="https://github.com/user-attachments/assets/ae6bc621-8371-4262-9f1b-5c4867b4c2b8" />
 when creating the Code Artifact Job, we are going to specify the path of the above buildspecfile on the Job, so codebuild can fetch and use it.
-Note: we are to Update line 11 of the above builspecfile, with the link on the maven-central store: clidk on view connection instructions, copy the step 3 code as seen on the below screenshot. paste the code on line 11 of Ur buildspecfile.
+Note: we are to Update line 11 of the above builspecfile, with the link on the maven-central store: clidk on view connection instructions, copy the step 3 code as seen on the below screenshot. paste the code on line 11 of Ur buildspecfile save it and commit and push to update Ur Bitbucket
 <img width="932" height="717" alt="Screenshot 2025-10-20 115231" src="https://github.com/user-attachments/assets/2ea239b0-c381-4fc4-8753-fffadc9f13ed" />
 
 when creating the Code Artifact Job, we are going to specify the path on the Job, so codebuild can fetch and use it.
 
 ****Creating The Build Artifact Job****
 <img width="948" height="976" alt="Screenshot 2025-11-13 215147" src="https://github.com/user-attachments/assets/0681c133-9f30-4652-be68-c727d74d844f" />
-scroll down after naming the project,
+give the project a name, on the source, select bitbucket as usual, select Ur repository, specify the bransch name as did earlier, "Remember, we had already linked our codebuild with our bitbucket", 
+scroll down to Operating System and select Ubuntu, image is 7.0
 <img width="953" height="967" alt="Screenshot 2025-11-13 215456" src="https://github.com/user-attachments/assets/de5b9845-8cc8-4748-a170-13a7114890bc" />
 specify our buildspec.yml file path as seen above
 <img width="944" height="936" alt="Screenshot 2025-11-13 215711" src="https://github.com/user-attachments/assets/4a102d5c-6c4e-4cc2-a230-f9071ad612a9" />
