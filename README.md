@@ -250,8 +250,28 @@ when creating the Code Artifact Job, we are going to specify the path on the Job
 <img width="948" height="976" alt="Screenshot 2025-11-13 215147" src="https://github.com/user-attachments/assets/0681c133-9f30-4652-be68-c727d74d844f" />
 give the project a name, on the source, select bitbucket as usual, select Ur repository, specify the bransch name as did earlier, "Remember, we had already linked our codebuild with our bitbucket", 
 scroll down to Operating System and select Ubuntu, image is 7.0
+On the Role name section, we still maintain the New service role
 <img width="953" height="967" alt="Screenshot 2025-11-13 215456" src="https://github.com/user-attachments/assets/de5b9845-8cc8-4748-a170-13a7114890bc" />
 specify our buildspec.yml file path as seen above
+regarding pushing the artifact to s3 bucket, we will configure that while creating our pipeline. 
+
 <img width="944" height="936" alt="Screenshot 2025-11-13 215711" src="https://github.com/user-attachments/assets/4a102d5c-6c4e-4cc2-a230-f9071ad612a9" />
 create a cloudwatch logs
+the group name will be thesame as name as our 1st build job, edit the 1st job, copy the cloudwatch groupname and use same name here. on the stream name, is Build Artifact. Click on Create Project.
+dont build the job yet, lets go and edit the role, to assign policy, meaning granting permissions to enable the buuild job have access to the codeArtifact Repository.
 
+go to IAM, Click on role on the left panel as seen below:
+<img width="943" height="643" alt="Screenshot 2025-11-13 220248" src="https://github.com/user-attachments/assets/6db4d1c2-61a7-4c46-9919-4b02f244089a" /> search for the CodeArtifact Role that was created while screating the job. click on it to open, click on attach policy just like we did on the former project.
+
+<img width="941" height="909" alt="Screenshot 2025-11-13 220505" src="https://github.com/user-attachments/assets/2251a350-8d3a-4500-a8b4-1fd90de0cb48" />
+
+search for codeArtifact Read only Access 
+<img width="941" height="909" alt="Screenshot 2025-11-13 220505" src="https://github.com/user-attachments/assets/d9c4b402-c1d2-4561-bc51-8b0d3ffe3f11" />
+after selecting it, click on add permission. the read only policy(permission) will be attached to our codebuild job role.
+
+after adding the policy, we go back to codebuild to build our recently created project
+<img width="1919" height="595" alt="Screenshot 2025-11-13 220632" src="https://github.com/user-attachments/assets/f06865ab-161a-41fb-8632-a4075b9475e8" />
+the codeArtifact Build was a success
+<img width="1919" height="985" alt="Screenshot 2025-11-13 221523" src="https://github.com/user-attachments/assets/f0345d9c-4c32-4514-b399-9a59f7d4cee5" />
+
+<img width="1919" height="997" alt="Screenshot 2025-11-13 221536" src="https://github.com/user-attachments/assets/e9deacc1-12b1-44a3-ba75-96527ff62ceb" />
