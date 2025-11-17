@@ -226,3 +226,31 @@ go to CodeBuild where our project is and click on Build, is going to take some t
 Your Build should be successfull if everything was well configured
 <img width="1875" height="975" alt="Screenshot 2025-11-13 162109" src="https://github.com/user-attachments/assets/e4785d5f-8b5e-40f2-a4dc-617cfccccc53" />
 ###If fail, study the docummentation all over again
+
+<img width="1700" height="964" alt="Screenshot 2025-11-13 214009" src="https://github.com/user-attachments/assets/6ac4b45f-5b9a-426a-b4bd-d9dc8231e0db" />
+
+Our prjoct passed the default quality gate on the SonarCloud Server
+<img width="1903" height="1024" alt="Screenshot 2025-11-13 214100" src="https://github.com/user-attachments/assets/8ca99bbd-c91d-42ec-b795-01d2e5bd0842" />
+Note: on Real Production setup, Developers must have set the Quality gate Condition on the sonarcloud
+
+<img width="1907" height="1014" alt="Screenshot 2025-11-13 214551" src="https://github.com/user-attachments/assets/50da20b9-533d-43ef-9af1-16341ada81a4" />
+thats maven central store with maven depndencies repository, as we run our build job, it downlaoded all the maven dependencies and store it on the maven-central-store
+
+***The next step is Building the Artifact and to store it in S3***
+The Next Build Job to configure is the code Artifact.
+the buildspec File for this Artifact is inside the 'aws-files' located in our source repo as seen below
+<img width="964" height="836" alt="Screenshot 2025-11-13 214715" src="https://github.com/user-attachments/assets/ae6bc621-8371-4262-9f1b-5c4867b4c2b8" />
+when creating the Code Artifact Job, we are going to specify the path of the above buildspecfile on the Job, so codebuild can fetch and use it.
+Note: we are to Update line 11 of the above builspecfile, with the link on the maven-central store: clidk on view connection instructions, copy the step 3 code as seen on the below screenshot. paste the code on line 11 of Ur buildspecfile.
+<img width="932" height="717" alt="Screenshot 2025-10-20 115231" src="https://github.com/user-attachments/assets/2ea239b0-c381-4fc4-8753-fffadc9f13ed" />
+
+when creating the Code Artifact Job, we are going to specify the path on the Job, so codebuild can fetch and use it.
+
+****Creating The Build Artifact Job****
+<img width="948" height="976" alt="Screenshot 2025-11-13 215147" src="https://github.com/user-attachments/assets/0681c133-9f30-4652-be68-c727d74d844f" />
+scroll down after naming the project,
+<img width="953" height="967" alt="Screenshot 2025-11-13 215456" src="https://github.com/user-attachments/assets/de5b9845-8cc8-4748-a170-13a7114890bc" />
+specify our buildspec.yml file path as seen above
+<img width="944" height="936" alt="Screenshot 2025-11-13 215711" src="https://github.com/user-attachments/assets/4a102d5c-6c4e-4cc2-a230-f9071ad612a9" />
+create a cloudwatch logs
+
