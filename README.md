@@ -161,7 +161,10 @@ select the compute resources which is ec2, select Ubuntu as the operating system
 
 <img width="961" height="957" alt="Screenshot 2025-10-20 164335" src="https://github.com/user-attachments/assets/66d728f5-b353-445c-aef1-919267774064" />
 
-select new service role and give it a name,  "roles in aws provides permission through policies" on the build spec option, leave it as it is, aws will fetch the buildspec.yml file on ur bitbucket repo root directory. if otherwize Ur buildspec file is not on the root directory, U'll have to mention the part on that buildspec space.
+select new service role and give it a name,  "roles in aws provides permission through policies" on the build spec option, 
+<img width="943" height="924" alt="Screenshot 2025-11-13 145517" src="https://github.com/user-attachments/assets/d7c5f3a4-9cf5-4a62-b058-bf098113536b" />
+
+select 'Usee a Buildspec Option' as aws will fetch the buildspec.yml file on ur bitbucket repo root directory. if otherwize Ur buildspec file is not on the root directory, U'll have to mention the part on that buildspec space.
 
 
 <img width="897" height="948" alt="Screenshot 2025-10-20 164856" src="https://github.com/user-attachments/assets/76d7be40-315e-40a5-9441-3033677c93d1" />
