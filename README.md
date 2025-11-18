@@ -347,13 +347,26 @@ after selecting Ur project, skip the other sections and get to this phase as sho
 AWS CodePipeline is configured to start building automatically once created. after hitting that create button, Ur pipeline start running
 <img width="959" height="935" alt="Screenshot 2025-11-14 152649" src="https://github.com/user-attachments/assets/8c660f20-be16-4ef2-a342-1ba1264f478e" />
 stop the pipeline as shown above, click on stop, a small box appears as seen above, select the current execution and click on stop. it will halt the pipeline, we need to edit the pipeline so we can add other things like: the remianing codebuild job, the s3, and the sns. (i didnt add those sections before because i wanted us to learn how to edit and fix a pipeline. thats what we will be doing most of the time as a DevOps Enginner)
+<img width="950" height="921" alt="Screenshot 2025-11-14 152702" src="https://github.com/user-attachments/assets/ceb8f0cf-2de0-47e5-b7a9-d1e4177375c5" />
+the pipeline was halted, so we can edit to add other sections
+click on edit as seen above
+<img width="945" height="918" alt="Screenshot 2025-11-14 153256" src="https://github.com/user-attachments/assets/38516791-8d62-4087-9d76-8e06ccf20d29" />
+click on add stage after source section as seen above
+give the stage a name(trying to add the remaining codeBuild Job to this section)
+<img width="948" height="887" alt="Screenshot 2025-11-14 153314" src="https://github.com/user-attachments/assets/f4fbf9ac-f2a8-4149-afe7-58eb21e6c7f2" />
+click on 'Add action group' to add Ur build project
+<img width="886" height="1018" alt="Screenshot 2025-11-14 153459" src="https://github.com/user-attachments/assets/7c175bbd-9a18-44fe-821e-bc6bb377b932" />
+give the job a descriptive name, select aws CodeBuild on the 'action provider menu'
+on 'input artifact' select sourceArtifact, on the 'project name', click to select the remaining project and click on done
+scroll down to the last of the page and click on 'Add stage'
+name the stage 'Deploy' (adding our s3 bucket earlier created)
+once created click 'add action group' to add our s3
+<img width="952" height="1015" alt="Screenshot 2025-11-14 154049" src="https://github.com/user-attachments/assets/a2347534-80fc-4eeb-b7db-8528fc09d93b" />
 
-
-
-
-
-
-
+as seen above, give a name, select s3 on 'action provider'
+search for the bucket by clicking on the search field below the Bucket to select the s3 bucket earlier created as seen above
+on that deployment path, write down the exact name of the folder U earlier created inside s3. the exalt name should be given here if not, Ur pipeline will fail
+click on done once ure through
 
 
 
