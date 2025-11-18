@@ -378,9 +378,13 @@ on the 'events that trigger notification' section, select and mark the list of t
 on the target section as seen above, select sns topic, and choose a target, on the search button, select the topic we earlier ccreated for the purpose of this pipeline, click on submit after that.
 
 rerun your pipeline as seen below
-<img width="1908" height="699" alt="Screenshot 2025-11-14 155206" src="https://github.com/user-attachments/assets/980d42b0-fc32-48a1-ba45-788ccd9c365a" />
+<img width="1905" height="835" alt="Screenshot 2025-11-16 081042" src="https://github.com/user-attachments/assets/a5a93f36-7547-418d-a9cf-6a89679a0867" />
 
-
+**##Note if your pipeline is well setup, the only reason Ur pipeline can fail is insurficient permmision**
+once your codeBuild has no error, that it the build stage was a success, the pipeline has no reason to fail, except if the pipeline role doesnt have enough permission.
+how do we address that?
+once the pipeline fails, we study the error to be a permission issues, we simply go to IAM, click on roles at the left panel and search for ur pipeline role
+###also be aware that **We cannot change the Role of a pipeline after created** we can only edit the Role to add the neccessary permissions.
 
 
 
