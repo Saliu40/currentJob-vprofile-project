@@ -364,9 +364,23 @@ once created click 'add action group' to add our s3
 <img width="952" height="1015" alt="Screenshot 2025-11-14 154049" src="https://github.com/user-attachments/assets/a2347534-80fc-4eeb-b7db-8528fc09d93b" />
 
 as seen above, give a name, select s3 on 'action provider'
-search for the bucket by clicking on the search field below the Bucket to select the s3 bucket earlier created as seen above
+search for the bucket by clicking the search field below the Bucket to select the s3 bucket earlier created as seen above
 on that deployment path, write down the exact name of the folder U earlier created inside s3. the exalt name should be given here if not, Ur pipeline will fail
-click on done once ure through
+click on done once ure through, ####Note click on 'Done' on every stage edited, and lastly, scroll up the page to click on 'save' so that our changes can be saved.
+
+####To add our SNS notification earier created to our pipeline, navigate to the left side of our project and click on settings as seen below
+<img width="1919" height="874" alt="Screenshot 2025-11-14 154600" src="https://github.com/user-attachments/assets/0e2261aa-36f4-487d-a58f-6d31df9f5786" />
+give the notification a name as seen below
+<img width="950" height="963" alt="Screenshot 2025-11-14 154735" src="https://github.com/user-attachments/assets/d042385c-da80-45ce-90ff-298f2317f221" />
+on the 'events that trigger notification' section, select and mark the list of trigger events you want to recieve 
+
+<img width="936" height="961" alt="Screenshot 2025-11-14 154934" src="https://github.com/user-attachments/assets/8042ed98-c55f-4196-93f1-aff232d886cf" />
+on the target section as seen above, select sns topic, and choose a target, on the search button, select the topic we earlier ccreated for the purpose of this pipeline, click on submit after that.
+
+rerun your pipeline as seen below
+<img width="1908" height="699" alt="Screenshot 2025-11-14 155206" src="https://github.com/user-attachments/assets/980d42b0-fc32-48a1-ba45-788ccd9c365a" />
+
+
 
 
 
