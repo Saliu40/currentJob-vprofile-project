@@ -386,6 +386,19 @@ how do we address that?
 once the pipeline fails, we study the error to be a permission issues, we simply go to IAM, click on roles at the left panel and search for ur pipeline role
 ###also be aware that **We cannot change the Role of a pipeline after created** we can only edit the Role to add the neccessary permissions.
 
+<img width="1911" height="901" alt="Screenshot 2025-11-16 003435" src="https://github.com/user-attachments/assets/b0c3d186-f2cf-4146-90a1-3fbc43b94dec" />
+as seen above go to IAM, click on role, search and select Ur pipline role, click on add permission after selecting the role (always add a number to ur pipeline role at the proccess of creating Ur pipeline for easy identification)
+
+<img width="1919" height="364" alt="Screenshot 2025-11-16 003455" src="https://github.com/user-attachments/assets/5b4d22f0-2491-4901-95e9-2eaa02dc9091" />
+once U click on add permission, it brings U to policy section as seen above, **'click on edit inline policy'** because U cannot specify a new polic rather, we can only add 'Inline policy'
+
+<img width="1919" height="954" alt="Screenshot 2025-11-16 003533" src="https://github.com/user-attachments/assets/5634ea08-4bb9-4c30-902a-24fe9b3a0162" />
+it brings U to this panel once U hit inline policy button, select the jasonfile. click on add new statement to add the neccessary permissions based on the pipeline errors. we can add as many permissions as we like base on the stages of the pipeline. ocne ure done, click save, give it a name and go rerun Ur pipeline. if U have another persion error, repeat thesame process to give it another permission untill it has enough permission to complete the pipeline.
+
+<img width="1670" height="691" alt="Screenshot 2025-11-14 143302" src="https://github.com/user-attachments/assets/312a15c4-4af0-43fe-a856-00b054a6109a" />
+note the SNS will be sending U mail at every stage your pipeline fail or succeedes.
+***######################################################THE                                        END########################################################***
+
 
 
 
