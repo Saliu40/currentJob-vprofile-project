@@ -313,6 +313,13 @@ after confirmations
 it should shows confirmed on Ur SNS.
 
 ***###Setting Up Our Pipeline***
+Search for codePipeline and Hit Create Button
+<img width="969" height="948" alt="Screenshot 2025-11-13 225203" src="https://github.com/user-attachments/assets/50dd5360-a8bb-455c-b389-2223557f6a90" />
+<img width="957" height="654" alt="Screenshot 2025-11-14 150630" src="https://github.com/user-attachments/assets/e4f18c53-8e17-4fae-ae4d-61961d584bf5" />
+select Build Custom pipeline as seen above and next
+<img width="956" height="993" alt="Screenshot 2025-11-14 150720" src="https://github.com/user-attachments/assets/afd1c8b7-69b9-4fba-b48c-296b941b7274" />
+specify your pipeline name, on the service role section, select new service role(role in aws relates to permisions)
+
 
 
 
