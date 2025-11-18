@@ -275,3 +275,60 @@ the codeArtifact Build was a success
 <img width="1919" height="985" alt="Screenshot 2025-11-13 221523" src="https://github.com/user-attachments/assets/f0345d9c-4c32-4514-b399-9a59f7d4cee5" />
 
 <img width="1919" height="997" alt="Screenshot 2025-11-13 221536" src="https://github.com/user-attachments/assets/e9deacc1-12b1-44a3-ba75-96527ff62ceb" />
+
+
+
+***###Setting Up CodePipeline For Our Build Project***
+before creating pipeline, we have to setup s3, and SNS that we will later link them both to our pipeline for storing Build Artifiact, and SNS for Notification
+
+Setting Up S3 Bucket
+navigate to search on aws console, type s3 and hit on create button.
+<img width="949" height="823" alt="Screenshot 2025-11-13 222122" src="https://github.com/user-attachments/assets/3b34db7a-bf4e-4866-8dd3-7c1355166364" />
+Give it a name and scroll down
+<img width="968" height="965" alt="Screenshot 2025-11-13 222221" src="https://github.com/user-attachments/assets/cfedeeef-8c44-430f-8c95-01237447087d" />
+enamble bucket key and hit on creation button
+<img width="937" height="918" alt="Screenshot 2025-11-13 223233" src="https://github.com/user-attachments/assets/1f96d3a4-c8fa-482f-8664-0925733d144a" />
+after succeffully created, go in and create a folder
+<img width="951" height="818" alt="Screenshot 2025-11-13 223313" src="https://github.com/user-attachments/assets/5f0c76fa-8d9b-402e-9c48-94e38749b1ad" />
+give the folder a name and hit on create. (we will specify the path on our pipeline)
+<img width="948" height="923" alt="Screenshot 2025-11-13 223353" src="https://github.com/user-attachments/assets/f5272ba9-aa7e-4a46-9a8e-126edf1fe537" />
+
+Setting Up SNS For Notification
+navigate to search on Ur aws console, seach sns and hit on create button to create a Topic
+<img width="951" height="617" alt="Screenshot 2025-11-13 223600" src="https://github.com/user-attachments/assets/399429e9-8b48-4d41-8fa3-1063538de078" />
+Give it a name and scroll down to create the Topic
+<img width="959" height="963" alt="Screenshot 2025-11-13 223736" src="https://github.com/user-attachments/assets/29f3e029-a428-421c-840e-887a2350894e" />
+go into the topic created to create subscription 
+<img width="944" height="942" alt="Screenshot 2025-11-13 223805" src="https://github.com/user-attachments/assets/13ef4d26-2e43-4aa1-9540-4a19709fb832" />
+select Email service on the protocol, insert the email addresses You wants to send notification regarding the success or failure of your pipeline 
+<img width="936" height="957" alt="Screenshot 2025-11-13 223917" src="https://github.com/user-attachments/assets/afad684e-a867-494b-870e-de7c87d961f6" />
+Hit on create button once done, an email notitfication will be sent to those email for confirmation once created.
+<img width="1320" height="384" alt="Screenshot 2025-11-13 224518" src="https://github.com/user-attachments/assets/7186149f-c009-4db6-9ae6-eaa64874eda3" />
+check your mail to Confirm the notification (check spam if U didnt seee it).
+<img width="1899" height="665" alt="Screenshot 2025-11-13 224539" src="https://github.com/user-attachments/assets/793d8957-b112-4e6c-a618-22640261771d" />
+thats the subscription details
+<img width="644" height="401" alt="Screenshot 2025-11-13 224554" src="https://github.com/user-attachments/assets/687172d0-9d4a-408d-b26f-9439bedf92d4" />
+after confirmations
+<img width="962" height="900" alt="Screenshot 2025-11-13 224633" src="https://github.com/user-attachments/assets/1b15b3e8-83f1-4c96-841f-4048f5f2b11f" />
+it should shows confirmed on Ur SNS.
+
+***###Setting Up Our Pipeline***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
