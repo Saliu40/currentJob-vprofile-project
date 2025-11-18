@@ -319,12 +319,22 @@ Search for codePipeline and Hit Create Button
 select Build Custom pipeline as seen above and next
 <img width="956" height="993" alt="Screenshot 2025-11-14 150720" src="https://github.com/user-attachments/assets/afd1c8b7-69b9-4fba-b48c-296b941b7274" />
 specify your pipeline name, on the service role section, select new service role(role in aws relates to permisions)
-
-
-
-
-
-
+<img width="933" height="952" alt="Screenshot 2025-11-13 225641" src="https://github.com/user-attachments/assets/a63a16d2-8484-40ad-9864-5f6679906f67" />
+select bitbucket on the source section(meaning where is Ur source code repo)
+we need to connect our Bitbucket repo with our code Pipeline(Make sure Ur bitbucket is loged in using thesame browser.)
+Click on 'connect to bitbucket' as shown in the aboce screen shot.
+<img width="617" height="672" alt="Screenshot 2025-11-13 230114" src="https://github.com/user-attachments/assets/45f45f1b-341f-413d-a483-d89afeb562a3" />
+the above mini window appear, give a connection name(any name) and click on 'connect to bitbucket' button
+<img width="597" height="618" alt="Screenshot 2025-11-13 230135" src="https://github.com/user-attachments/assets/8be68b27-8564-4efb-82eb-3892383f01ee" />
+Another Mini Windows appear, click on 'install a new app' as seen above
+<img width="619" height="656" alt="Screenshot 2025-11-13 230155" src="https://github.com/user-attachments/assets/48d6ad76-dc7e-4010-a7d2-f5d3febdd1a5" />
+grnat the access to connect
+<img width="609" height="692" alt="Screenshot 2025-11-13 230231" src="https://github.com/user-attachments/assets/cbdef2e3-2b51-4657-b1a2-8b4f897ce9d2" />
+finally click on connect
+<img width="945" height="965" alt="Screenshot 2025-11-13 230312" src="https://github.com/user-attachments/assets/38c669ec-c1f9-4f15-b5fd-1d19911fc89e" />
+once connected, click on 'Repository name' all Ur repos on bitbucket should appear there, select this project repo
+click on the 'default branch' to select our project branch, scroll down to select webhook as seen below.
+<img width="955" height="962" alt="Screenshot 2025-11-14 151222" src="https://github.com/user-attachments/assets/c45fde04-5ba9-4dc7-ac39-85161680e657" />
 
 
 
