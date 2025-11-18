@@ -335,8 +335,18 @@ finally click on connect
 once connected, click on 'Repository name' all Ur repos on bitbucket should appear there, select this project repo
 click on the 'default branch' to select our project branch, scroll down to select webhook as seen below.
 <img width="955" height="962" alt="Screenshot 2025-11-14 151222" src="https://github.com/user-attachments/assets/c45fde04-5ba9-4dc7-ac39-85161680e657" />
-
-
+hit on next
+<img width="1781" height="626" alt="Screenshot 2025-11-15 135212" src="https://github.com/user-attachments/assets/557fa579-6fea-41f4-9242-6ce1bf062adc" />
+on the Build stage above, select other build providers
+click on the drop down menu to select CodeBuild
+<img width="926" height="877" alt="Screenshot 2025-11-18 161837" src="https://github.com/user-attachments/assets/86a10488-3f1c-4c42-9a84-8d82ac0e4de2" />
+below that 'project name' click on the search to add your project(remember we earlier build 2 projects on codeBuild as shown below, select one of the project and continue.)
+<img width="1918" height="537" alt="Screenshot 2025-11-13 221913" src="https://github.com/user-attachments/assets/231e0292-f1e7-4024-9ae7-e77db232ea02" />
+after selecting Ur project, skip the other sections and get to this phase as shown below, we will edit our pipeline to add the rest lster
+<img width="927" height="961" alt="Screenshot 2025-11-14 152559" src="https://github.com/user-attachments/assets/6ac69541-c046-4f16-8590-83b28247640d" />
+AWS CodePipeline is configured to start building automatically once created. after hitting that create button, Ur pipeline start running
+<img width="959" height="935" alt="Screenshot 2025-11-14 152649" src="https://github.com/user-attachments/assets/8c660f20-be16-4ef2-a342-1ba1264f478e" />
+stop the pipeline as shown above, click on stop, a small box appears as seen above, select the current execution and click on stop. it will halt the pipeline, we need to edit the pipeline so we can add other things like: the remianing codebuild job, the s3, and the sns. (i didnt add those sections before because i wanted us to learn how to edit and fix a pipeline. thats what we will be doing most of the time as a DevOps Enginner)
 
 
 
