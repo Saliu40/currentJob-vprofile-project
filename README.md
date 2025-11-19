@@ -1,4 +1,57 @@
-The Name of this Project is continuos integration on AWS: Using AWS services for CICD
+**The Name of this Project is continuos integration on AWS: Using AWS services for CICD**
+
+✅ PROBLEM STATEMENT
+
+In an Agile SDLC environment where development teams make frequent code changes to deliver new features quickly, several challenges arise:
+
+Code changes happen regularly, but testing is not always performed consistently.
+
+Manual build and release processes are time-consuming and error-prone.
+
+Frequent commits without automated testing cause bugs and code defects to accumulate over time.
+
+Developers often discover issues late in the cycle, requiring rework, slowing velocity, and reducing overall software quality.
+
+Lack of automated quality checks results in inconsistent builds, delayed feedback loops, and unstable releases.
+
+These problems reduce development speed, affect product reliability, and slow down deployment cycles in fast-moving Agile teams.
+
+✅ SOLUTION STATEMENT
+
+To address these challenges, I designed and implemented a fully automated Continuous Integration (CI) pipeline using AWS services. The CI solution ensures that every code commit triggers an automated sequence of build, test, code review, and artifact storage.
+
+The solution automates the entire workflow:
+
+Bitbucket Repository acts as the source for developers’ code commits.
+
+AWS CodePipeline orchestrates the entire CI workflow automatically.
+
+AWS CodeBuild performs automated builds and unit tests on each commit.
+
+SonarCloud is integrated via CodeBuild to run automated code quality and security analysis.
+
+AWS CodeArtifact manages Maven dependencies securely.
+
+S3 stores build artifacts and versioned outputs.
+
+SNS sends instant notifications to developers when builds pass or fail.
+
+With this automated CI solution:
+
+Every commit is tested immediately.
+
+Developers receive instant feedback on code quality and build success/failure.
+
+Bugs are detected early, reducing rework.
+
+Manual build and release processes are eliminated.
+
+Code quality becomes more consistent across the team.
+
+Build and test cycles become faster, predictable, and scalable.
+
+This automation greatly improves delivery speed, reduces defects, and supports a highly efficient Agile development environment.
+
 # Services Used:
 1 BitBucket for source code
 2 AWS Code Artifact for Maven Dependencies 
